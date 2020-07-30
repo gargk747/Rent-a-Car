@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.denzcoskun:ImageSlideshow:0.0.6@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f6173875e2f8a56775094517ab77141/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5f6173875e2f8a56775094517ab77141/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.denzcoskun/ImageSlideshow/0.0.6/495eff21dbf10935786416c6e25e5124c33e7ee6/ImageSlideshow-0.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

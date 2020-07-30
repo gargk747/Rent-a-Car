@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomSheetConatiner"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/bottom_sheet_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardElevation="10dp"
+        >
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Car Details"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:placeholder="@drawable/swift4"
+            android:id="@+id/slider"
+            app:auto_cycle="false"
+            app:delay="0"
+            app:period="1000"
+            app:corner_radius="5">
+
+        </com.denzcoskun.imageslider.ImageSlider>
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_marginTop="220dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/carName_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swift Dzire"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:id="@+id/carPrice_details"
+                android:layout_below="@id/carName_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100/day"
+                android:textStyle="bold"
+                android:textColor="@color/lightblack"
+                android:textSize="15dp"
+                android:layout_marginTop="3dp"
+                />
+            <ImageView
+                android:id="@+id/personicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carPrice_details"
+                android:src="@drawable/ic_people"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="40dp"
+                />
+            <TextView
+                android:id="@+id/carPerson_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/personicon"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/carPrice_details"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="4 Person"/>
+            <ImageView
+                android:id="@+id/sterringicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carPrice_details"
+                android:src="@drawable/ic_place"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="145dp"
+                />
+            <TextView
+                android:id="@+id/carLocation_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/personicon"
+                android:layout_marginStart="130dp"
+                android:layout_below="@id/carPrice_details"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Mumbai"/>
+            <ImageView
+                android:id="@+id/fuelcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carPrice_details"
+                android:src="@drawable/ic_petrol"
+                android:layout_marginTop="33dp"
+                android:layout_marginStart="40dp"
+                />
+            <TextView
+                android:id="@+id/carMilage_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/personicon"
+                android:layout_marginStart="25dp"
+                android:layout_below="@id/carPrice_details"
+                android:layout_marginTop="35dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="20km/L"/>
+            <ImageView
+                android:id="@+id/luggageicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carPrice_details"
+                android:src="@drawable/ic_color"
+                android:layout_marginTop="33dp"
+                android:layout_marginStart="145dp"
+                />
+            <TextView
+                android:id="@+id/carColor_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/personicon"
+                android:layout_marginStart="130dp"
+                android:layout_below="@id/carPrice_details"
+                android:layout_marginTop="35dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Blue, White"/>
+
+            <TextView
+                android:id="@+id/carDetails_details"
+                android:layout_below="@+id/luggageicon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lines="5"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:text="hello"/>
+
+            <Button
+                android:id="@+id/btn_book"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="BOOK NOW"
+                android:textSize="15dp"
+                android:layout_marginTop="150dp"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="35dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
